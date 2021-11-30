@@ -1,5 +1,11 @@
 <% @reviews.each do |review| %>
   <div class"review">
-    <%= review %>
+    <b> <%= review.game %> </b>
+    <details>
+      <summary>Score</summary>
+      <p>
+        <%= review.score %>
+      </p>
+    </details>
   </div>
 <% end %>
