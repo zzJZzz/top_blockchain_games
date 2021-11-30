@@ -1,11 +1,5 @@
 <% @reviews.each do |review| %>
   <div class"review">
-    <b> <%= review.game %> </b>
-    <details>
-      <summary>Score</summary>
-      <p>
-        <%= review.score %>
-      </p>
-    </details>
+    <b> <%= link_to review.game, review_path(review) %> </b>
   </div>
 <% end %>

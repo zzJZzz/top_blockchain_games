@@ -1,0 +1,17 @@
+<b><%= @review.game %></b>
+<br>
+<details>
+  <summary>Review</summary>
+  <p>
+    <%= @review.score %>
+  </p>
+  <p>
+    <%= @review.description %>
+  </p>
+  <p>
+    <%= @review.blockchain %>
+  </p>
+  <p>
+    <%= link_to @review.game, @review.url %>
+  </p>
+</details>

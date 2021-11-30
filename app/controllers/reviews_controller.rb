@@ -22,6 +22,10 @@ class ReviewsController < ApplicationController
            flash[:message] = "Your Review was not Created Successfully!"
         end
     end
+
+    def show
+        @review = Review.find(params[:id])
+    end
     
 
 end
