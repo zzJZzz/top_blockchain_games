@@ -6,7 +6,7 @@
     <%= @review.score %>
   </p>
   <p>
-    <%= @review.description %>
+    <%= simple_format @review.description %>
   </p>
   <p>
     <%= @review.blockchain %>
@@ -15,3 +15,7 @@
     <%= link_to @review.game, @review.url %>
   </p>
 </details>
+<div>
+  <%= link_to 'Edit', edit_review_path(@review) %>
+  <%= link_to 'Delete', review_path(@review), method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>

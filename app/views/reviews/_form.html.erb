@@ -1,0 +1,35 @@
+<%= form_for @review do |f| %>
+  <p>
+    <%= f.label :game %>
+    <%= f.text_field :game %>
+    <br>
+  </P>
+  <p>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+    <br>
+  </P>
+  <p>
+    <%= f.label :score %>
+    <%= f.number_field :score %>
+    <br>
+  </P>
+  <p>
+    <%= f.label :url %>
+    <%= f.url_field :url %>
+    <br>
+  </P>
+  <p>
+    <div class="field">
+      <b><%= f.label :blockchain %></b>
+      <br />
+      <%= f.label :blockchain, "Ethereum", :value => "true"  %>
+      <%= f.radio_button :blockchain, true %>
+      <%= f.label :blockchain, "Polygon", :value => "false" %>
+      <%= f.radio_button :blockchain, false, :checked => true %>
+      <%= f.label :blockchain, "Solana", :value => "false" %>
+      <%= f.radio_button :blockchain, false, :checked => true %>
+    </div>
+  </P>
+  <%= f.submit "Save Review" %>
+<% end %>

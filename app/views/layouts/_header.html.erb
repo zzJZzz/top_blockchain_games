@@ -1,6 +1,9 @@
 <div class="header">
   <header>
-    <h1><%= link_to 'Top Blockchain Games', root_path %></h1>
+    <h1><%= link_to root_path do %>
+        <%= image_tag "topblockchaingames.jpg" %>
+      <% end %>
+    </h1>
     <h2>Play to Earn</h2>
     <nav>
       <%= link_to 'Add a Review', new_review_path %>

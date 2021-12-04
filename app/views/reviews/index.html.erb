@@ -1,5 +1,5 @@
 <% @reviews.each do |review| %>
   <div class"review">
-    <b> <%= link_to review.game, review_path(review) %> </b>
+    <b> <%= link_to review.game.capitalize, review_path(review) %> </b>
   </div>
 <% end %>
