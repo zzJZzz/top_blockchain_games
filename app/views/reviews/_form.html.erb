@@ -23,12 +23,12 @@
     <div class="field">
       <b><%= f.label :blockchain %></b>
       <br />
-      <%= f.label :blockchain, "Ethereum", :value => "true"  %>
-      <%= f.radio_button :blockchain, true %>
-      <%= f.label :blockchain, "Polygon", :value => "false" %>
-      <%= f.radio_button :blockchain, false, :checked => true %>
-      <%= f.label :blockchain, "Solana", :value => "false" %>
-      <%= f.radio_button :blockchain, false, :checked => true %>
+      <%= f.label :blockchain, "Ethereum"  %>
+      <%= f.radio_button :blockchain, "Etherium" %>
+      <%= f.label :blockchain, "Polygon" %>
+      <%= f.radio_button :blockchain, "Polygon" %>
+      <%= f.label :blockchain, "Solana" %>
+      <%= f.radio_button :blockchain, "Solana" %>
     </div>
   </P>
   <%= f.submit "Save Review" %>
