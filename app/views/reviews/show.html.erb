@@ -1,7 +1,7 @@
-<b><%= @review.game %></b>
-<br>
-<details>
-  <summary>Review</summary>
+<div class="card">
+  <header>
+    <b><%= @review.game %></b>
+  </header>
   <p>
     <%= @review.score %>
   </p>
@@ -15,7 +15,12 @@
     <%= link_to @review.game, @review.url %>
   </p>
 </details>
-<div>
-  <%= link_to 'Edit', edit_review_path(@review) %>
-  <%= link_to 'Delete', review_path(@review), method: :delete, data: { confirm: 'Are you sure?' } %>
+<footer class="is-right">
+  <div class="button outline dark">
+    <%= link_to 'Edit', edit_review_path(@review) %>
+  </div>
+  <div class="button outline dark">
+    <%= link_to 'Delete', review_path(@review), method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div>
+</footer>
 </div>

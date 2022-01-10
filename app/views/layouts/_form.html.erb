@@ -22,7 +22,7 @@
   <p>
     <div class="field">
       <b><%= f.label :blockchain %></b>
-      <br />
+      <br>
       <%= f.label :blockchain, "Ethereum"  %>
       <%= f.radio_button :blockchain, "Etherium" %>
       <%= f.label :blockchain, "Polygon" %>
@@ -31,5 +31,7 @@
       <%= f.radio_button :blockchain, "Solana" %>
     </div>
   </P>
-  <%= f.submit "Save Review" %>
+  <div class="is-center">
+    <%= f.submit "Save Review" %>
+  </div>
 <% end %>
