@@ -7,11 +7,13 @@
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest">
   </head>
   <body>
-    <%= render 'layouts/header' %>
-    <%= render "layouts/flash" %>
-    <%= yield %>
+    <div class="container">
+      <%= render 'layouts/header' %>
+      <%= render "layouts/flash" %>
+      <%= yield %>
+    </div>
   </body>
 </html>
