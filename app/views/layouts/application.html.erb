@@ -9,18 +9,12 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://unpkg.com/tinypebblecss@latest">
   </head>
-  <header>
-    <div class="container">
-      <%= render 'layouts/header' %>
-    </div>
-  </header>
   <body>
     <div class="container">
+      <%= render 'layouts/header' %>
       <%= render "layouts/flash" %>
       <%= yield %>
     </div>
-  </body>
-  <footer>
     <%= render 'layouts/footer' %>
-  </footer>
+  </body>
 </html>
