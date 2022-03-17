@@ -19,7 +19,7 @@
   <div class="button outline secondary">
     <%= link_to 'Edit', edit_review_path(@review) %>
   </div>
-  <div class="button outline dark">
+  <div class="button error">
     <%= link_to 'Delete', review_path(@review), method: :delete, data: { confirm: 'Are you sure?' } %>
   </div>
 </footer>
