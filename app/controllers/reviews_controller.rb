@@ -16,9 +16,9 @@ class ReviewsController < ApplicationController
     # save to database
     if @review.save
       redirect_to root_path
-      flash[:message] = "Your Review was Created Successfully!"
+      flash[:notice] = "Your Review was Created Successfully!"
     else
-      flash[:message] = "Your Review was NOT Created Successfully!"
+      flash[:alert] = "Your Review was NOT Created Successfully!"
       render "new"
     end
   end
@@ -45,9 +45,9 @@ class ReviewsController < ApplicationController
     # save to database
     if @review.save
       redirect_to review_path(@review)
-      flash[:message] = "Your Review was Edited Successfully!"
+      flash[:notice] = "Your Review was Edited Successfully!"
     else
-      flash[:message] = "Your Review was NOT Edited Successfully!"
+      flash[:alert] = "Your Review was NOT Edited Successfully!"
     end
   end
 end

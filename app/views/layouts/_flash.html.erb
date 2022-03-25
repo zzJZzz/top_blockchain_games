@@ -1,7 +1,13 @@
 <% if flash.any? %>
   <% flash.each do |type, msg| %>
-    <div class = "bg-success text-capitalize is-center">
-      <%= msg %>
-    </div>
+    <% if type == 'notice' %>
+      <div class = "bg-success text-capitalize is-center">
+        <%= msg %>
+      </div>
+    <% else %>
+      <div class = "bg-error text-capitalize is-center">
+        <%= msg %>
+      </div>
+    <% end %>
   <% end %>
 <% end %>
