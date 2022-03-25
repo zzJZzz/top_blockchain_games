@@ -5,10 +5,16 @@
       <% end %>
     </h1>
   </div>
-  <h2>Play to Earn</h2>
-  <nav>
-    <div class="button outline dark">
-      <%= link_to 'Add a Review', new_review_path %>
+  <nav class="nav">
+    <div class="nav-left">
+      <div class="brand">
+        <%= link_to 'Top Blockchain Games', root_path %>
+      </div>
+    </div>
+    <div class="nav-right">
+      <div class="button outline primary">
+        <%= link_to 'Add a Review', new_review_path %>
+      </div>
     </div>
   </nav>
 </header>

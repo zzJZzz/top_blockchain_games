@@ -14,13 +14,17 @@
   <p>
     <%= link_to @review.game, @review.url %>
   </p>
-</details>
-<footer class="is-right">
-  <div class="button outline secondary">
-    <%= link_to 'Edit', edit_review_path(@review) %>
-  </div>
-  <div class="button error">
-    <%= link_to 'Delete', review_path(@review), method: :delete, data: { confirm: 'Are you sure?' } %>
-  </div>
-</footer>
+  <footer>
+    <div class="is-right">
+      <div class="button secondary">
+        <%= link_to 'Cancel', root_path(@review) %>
+      </div>
+      <div class="button outline secondary">
+        <%= link_to 'Edit', edit_review_path(@review) %>
+      </div>
+      <div class="button error">
+        <%= link_to 'Delete', review_path(@review), method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+  </footer>
 </div>
