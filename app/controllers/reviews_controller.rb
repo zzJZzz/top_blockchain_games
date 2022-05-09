@@ -18,7 +18,7 @@ class ReviewsController < ApplicationController
       redirect_to root_path
       flash[:notice] = "Your Review was Created Successfully!"
     else
-      flash[:alert] = "Your Review was NOT Created Successfully!"
+      flash[:alert] = "Your Review was NOT Created Successfully! Description must be at least 20 characters long. Score must be between 1 and 10."
       render "new"
     end
   end
